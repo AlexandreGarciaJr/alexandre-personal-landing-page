@@ -102,7 +102,7 @@ body{
     justify-content:center;
     text-align:center;
     color:white;
-    background: #000
+    background:var(--dark);
 }
 
 /* FUNDO PARALLAX (GPU) */
