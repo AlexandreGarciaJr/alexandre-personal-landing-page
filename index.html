@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alexandre Personal Trainer</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="whatsapp-button" href="https://wa.me/5511986186964?text=Olá,%20preciso%20de%20mais%20informações." target="_blank" aria-label="Fale conosco via WhatsApp">
+      <span class="whatsapp-text" data-key="whatsfale">Contato</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav">
+        <h1 class="logo">Alexandre Personal</h1>
+
+        <nav class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#contato" class="btn">Agendar Avaliação</a>
+    </div>
+</header>
+
+
+<!-- HERO COM IMAGEM -->
+<section class="hero reveal">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+        <h2>Transforme seu corpo. Eleve sua performance.</h2>
+        <p>Treinos personalizados presenciais e online com acompanhamento profissional.</p>
+        <a href="#contato" class="btn">Começar Agora</a>
+    </div>
+
+</section>
+
+
+<!-- SOBRE -->
+<section id="sobre" class="section reveal">
+    <div class="container two-col">
+        <div>
+            <h2>Sobre o Personal</h2>
+            <p>
+                +5 anos de experiência ajudando alunos a conquistar saúde,
+                definição muscular e qualidade de vida.
+            </p>
+        </div>
+
+        <div class="highlight">
+            <h3>200+ alunos transformados</h3>
+        </div>
+    </div>
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section light reveal">
+    <div class="container">
+        <h2 class="center">Serviços</h2>
+
+        <div class="cards">
+            <div class="card">Personal Presencial</div>
+            <div class="card">Consultoria Online</div>
+            <div class="card">Avaliação Física</div>
+            <div class="card">Plano Nutricional</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios" class="section dark reveal">
+    <div class="container">
+        <h2 class="center">Benefícios</h2>
+
+        <div class="benefits-grid">
+            <div class="befeficios">Resultados rápidos</div>
+            <div class="befeficios">Treino seguro</div>
+            <div class="befeficios">Motivação diária</div>
+            <div class="befeficios">Horários flexíveis</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTATO (Netlify Forms) -->
+<section id="contato" class="section reveal">
+    <div class="container contact-wrapper">
+
+        <div>
+            <h2>Entre em contato</h2>
+            <p>Agende sua avaliação gratuita agora mesmo.</p>
+        </div>
+
+        <!-- FORM FUNCIONAL -->
+        <form name="contato" method="POST" data-netlify="true" class="form">
+            <input type="hidden" name="form-name" value="contato" />
+
+            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="mensagem" placeholder="Mensagem"></textarea>
+
+            <button class="btn">Enviar</button>
+        </form>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <h3 class="footer-logo">Alexandre Personal</h3>
+
+        <p class="footer-text">
+            Transformando vidas através do treino personalizado e acompanhamento profissional.
+        </p>
+
+        <div class="footer-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+        <span class="footer-copy">
+            © 2026 Todos os direitos reservados
+        </span>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

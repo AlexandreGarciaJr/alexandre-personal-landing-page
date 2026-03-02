@@ -1,0 +1,358 @@
+@import url(./whatsapp.css);
+:root {
+    --primary:#ff6600;
+    --dark:#111;
+    --light:#f4f4f4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    background:white;
+    color:#222;
+    scroll-behavior:smooth;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    background:var(--dark);
+    color:white;
+    padding:15px 0;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    position:relative;
+    color:white;
+    text-decoration:none;
+    font-size:1.25rem;
+    padding:5px 0;
+    transition:0.3s;
+}
+
+/* HOVER - muda cor */
+.menu a:hover{
+    color:var(--primary);
+}
+
+/* LINHA ANIMADA */
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0%;
+    height:2px;
+    background:var(--primary);
+    transition:0.3s;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+/* BOTÃO */
+.btn{
+    background:var(--primary);
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+/* HOVER PREMIUM */
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    background:#cc5200;
+}
+
+/* HERO COM IMAGEM */
+.hero{
+    position:relative;
+    height:90vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+/* FUNDO PARALLAX (GPU) */
+.hero-bg{
+    position:absolute;
+
+    /* maior que o hero */
+    top:-15%;
+    left:0;
+    width:100%;
+    height:130%;
+
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+        url("../img/Fundo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    transform:translate3d(0,0,0);
+    will-change:transform;
+
+    z-index:0;
+}
+
+.hero h2 {
+    font-size:2.2rem;
+    margin-bottom:15px;
+}
+.hero p {
+    font-size:1.25rem;
+    margin-bottom:15px;
+}
+
+.hero a {
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+/* SEÇÕES */
+.section{
+    padding:80px 0;
+}
+
+.light{background:var(--light);}
+.dark{background:#222;color:white;}
+
+.center{text-align:center;}
+
+/* CARDS */
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    flex:1 1 250px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* BENEFITS GRID */
+.benefits-grid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+.benefits-grid div {
+    flex:1 1 250px;
+    background:#52525273;
+    padding:20px;
+    border-radius:6px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.befeficios:hover{
+    transform:scale(1.05);
+}
+
+/* CONTATO */
+.contact-section {
+    background:#222;
+    color:white;
+    padding:80px 0;
+}
+
+.contact-wrapper {
+    display:flex;
+    gap:40px;
+}
+
+.form {
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:100%;
+}
+
+/* CAMPOS PREMIUM */
+.form input,
+.form textarea {
+    padding:12px;
+    border-radius:6px;
+
+    background:#f8f8f8;        /* fundo leve */
+    border:1px solid #ccc;     /* borda suave */
+
+    font-size:14px;
+
+    transition:0.3s;
+}
+
+/* efeito ao clicar */
+.form input:focus,
+.form textarea:focus {
+    outline:none;
+    border:1px solid #ff6600;
+    box-shadow:0 0 0 3px rgba(255,102,0,0.2);
+}
+
+/* textarea maior */
+.form textarea {
+    min-height:120px;
+    resize:vertical;
+}
+
+/* ANIMAÇÃO SCROLL */
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.footer {
+    background: linear-gradient(180deg, #111, #0a0a0a);
+    color: #ccc;
+    padding: 60px 20px 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+/* logo */
+.footer-logo {
+    color: #ff7a00;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* descrição */
+.footer-text {
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: .8;
+}
+
+/* links */
+.footer-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+    position: relative;
+}
+
+/* hover moderno */
+.footer-links a:hover {
+    color: #ff7a00;
+    transform: translateY(-2px);
+}
+
+/* linha inferior */
+.footer-copy {
+    font-size: 12px;
+    opacity: .5;
+    margin-top: 10px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    /* empilha header */
+    .nav{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    /* botão primeiro */
+    .btn{
+        order:2;
+    }
+
+    /* menu abaixo do botão */
+    .menu{
+        order:3;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .contact-wrapper{
+        flex-direction:column;
+    }
+}
