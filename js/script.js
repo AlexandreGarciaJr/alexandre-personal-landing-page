@@ -1,4 +1,4 @@
-/* ANIMAÇÃO AO ROLAR (SCROLL REVEAL) */
+/* ANIMAÇÃO SCROLL */
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
 
         requestAnimationFrame(() => {
 
-            const offset = window.scrollY * 0.5; // intensidade
+            const offset = window.scrollY * 0.5;
 
             heroBg.style.transform = `translate3d(0, ${offset}px, 0)`;
 

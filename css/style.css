@@ -1,4 +1,5 @@
 @import url(./whatsapp.css);
+
 :root {
     --primary:#ff6600;
     --dark:#111;
@@ -25,7 +26,6 @@ body{
     margin:auto;
 }
 
-/* HEADER */
 .header{
     background:var(--dark);
     color:white;
@@ -54,12 +54,10 @@ body{
     transition:0.3s;
 }
 
-/* HOVER - muda cor */
 .menu a:hover{
     color:var(--primary);
 }
 
-/* LINHA ANIMADA */
 .menu a::after{
     content:"";
     position:absolute;
@@ -75,7 +73,6 @@ body{
     width:100%;
 }
 
-/* BOTÃO */
 .btn{
     background:var(--primary);
     color:white;
@@ -87,14 +84,12 @@ body{
     transition:.3s;
 }
 
-/* HOVER PREMIUM */
 .btn:hover{
     transform:translateY(-3px);
     box-shadow:0 10px 20px rgba(0,0,0,.3);
     background:#cc5200;
 }
 
-/* HERO COM IMAGEM */
 .hero{
     position:relative;
     height:100svh;
@@ -107,7 +102,7 @@ body{
     background:var(--dark);
 }
 
-/* FUNDO PARALLAX (GPU) */
+/* FUNDO PARALLAX */
 .hero-bg{
     position: absolute;
 
@@ -184,7 +179,6 @@ body{
     transform:scale(1.05);
 }
 
-/* BENEFITS GRID */
 .benefits-grid {
     display:flex;
     flex-wrap:wrap;
@@ -206,7 +200,6 @@ body{
     transform:scale(1.05);
 }
 
-/* CONTATO */
 .contact-section {
     background:#222;
     color:white;
@@ -225,21 +218,19 @@ body{
     width:100%;
 }
 
-/* CAMPOS PREMIUM */
 .form input,
 .form textarea {
     padding:12px;
     border-radius:6px;
 
-    background:#f8f8f8;        /* fundo leve */
-    border:1px solid #ccc;     /* borda suave */
+    background:#f8f8f8;       
+    border:1px solid #ccc;     
 
     font-size:14px;
 
     transition:0.3s;
 }
 
-/* efeito ao clicar */
 .form input:focus,
 .form textarea:focus {
     outline:none;
@@ -247,13 +238,11 @@ body{
     box-shadow:0 0 0 3px rgba(255,102,0,0.2);
 }
 
-/* textarea maior */
 .form textarea {
     min-height:120px;
     resize:vertical;
 }
 
-/* ANIMAÇÃO SCROLL */
 .reveal{
     opacity:0;
     transform:translateY(40px);
@@ -283,7 +272,6 @@ body{
     gap: 22px;
 }
 
-/* logo */
 .footer-logo {
     color: #ff7a00;
     font-size: 24px;
@@ -291,7 +279,6 @@ body{
     letter-spacing: 1px;
 }
 
-/* descrição */
 .footer-text {
     max-width: 520px;
     font-size: 14px;
@@ -299,7 +286,6 @@ body{
     opacity: .8;
 }
 
-/* links */
 .footer-links {
     display: flex;
     gap: 24px;
@@ -315,35 +301,28 @@ body{
     position: relative;
 }
 
-/* hover moderno */
 .footer-links a:hover {
     color: #ff7a00;
     transform: translateY(-2px);
 }
 
-/* linha inferior */
 .footer-copy {
     font-size: 12px;
     opacity: .5;
     margin-top: 10px;
 }
 
-/* RESPONSIVO */
 @media(max-width:768px){
-
-    /* empilha header */
     .nav{
         flex-direction:column;
         align-items:center;
         gap:15px;
     }
 
-    /* botão primeiro */
     .btn{
         order:2;
     }
 
-    /* menu abaixo do botão */
     .menu{
         order:3;
         flex-direction:column;
