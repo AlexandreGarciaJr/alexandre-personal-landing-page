@@ -18,4 +18,6 @@
 
 https://alexandregarciajr.github.io/alexandre-personal-landing-page/
 
+https://alexandre-personal.netlify.app/
+
 ![alt text](./img/image.png)
