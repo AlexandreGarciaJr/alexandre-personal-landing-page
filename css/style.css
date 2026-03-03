@@ -360,17 +360,6 @@ body{
     resize:vertical;
 }
 
-.reveal{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all .8s ease;
-}
-
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
-}
-
 .footer {
     background: linear-gradient(180deg, #111, #0a0a0a);
     color: #ccc;
@@ -428,6 +417,19 @@ body{
     opacity: .5;
     margin-top: 10px;
 }
+
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1.4s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
 
 @media(max-width:768px){
     .nav{
